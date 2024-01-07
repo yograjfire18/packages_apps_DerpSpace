@@ -585,4 +585,8 @@
     <!-- Colored QS notification icons -->  
     <string name="qs_colored_icons_title">Colored QS notification icons</string>
     <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
+
+    <!-- Custom Clock Style -->
+    <string name="lockscreen_clock_category_title">Lockscreen Clock</string>
+    <string name="custom_clock_style">Custom Clock Style</string>
 </resources>
