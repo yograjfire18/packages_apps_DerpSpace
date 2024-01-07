@@ -53,6 +53,13 @@
             android:summary="@string/theme_customization_lock_clock_summary"
             android:fragment="org.derpfest.derpspace.fragments.LockClockFonts"/>
 
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:entries="@array/clock_style_entries"
+            android:title="Custom Clock style"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
