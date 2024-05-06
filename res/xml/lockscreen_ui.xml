@@ -66,6 +66,29 @@
             android:entryValues="@array/screen_off_animation_values"
             android:defaultValue="0" />
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="depth_wallpaper_enabled"
+            android:title="@string/dw_wallpaper_enabled_title"
+            android:summary="@string/dw_wallpaper_enabled_summary"
+            android:defaultValue="false"
+            lineage:position="top" />
+
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:key="depth_wallpaper_subject_image_uri"
+            android:dependency="depth_wallpaper_enabled"
+            android:title="@string/dw_file_header_select_title"
+            android:summary="@string/dw_file_header_select_summary"
+            android:persistent="false" />
+
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+            android:key="depth_wallpaper_opacity"
+            android:title="@string/dw_wallpaper_opacity_title"
+            android:max="100"
+            settings:min="1"
+            settings:interval="1"
+            settings:units="%"
+            android:defaultValue="100" />
+
         <Preference
             android:key="android.theme.customization.lockscreen_clock_font"
             android:title="@string/theme_customization_lock_clock_title"
