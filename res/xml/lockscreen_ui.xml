@@ -63,6 +63,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="lockscreen_ui_wallpaper_category"
+        android:title="@string/wallpaper_category">
+
+        <Preference
+            android:key="depth_wallpaper"
+            android:title="@string/dw_wallpaper_enabled_title"
+            android:summary="@string/dw_wallpaper_enabled_summary"
+            android:fragment="org.derpfest.derpspace.fragments.WallpaperDepth" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="lockscreen_ui_charging_category"
         android:title="@string/charging_category">
 
